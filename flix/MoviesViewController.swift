@@ -56,6 +56,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         task.resume()
     }
     
+//    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+//        super.viewWillTransition(to: size, with: coordinator)
+//
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+//        if UIDevice.current.orientation.isLandscape {
+//            print("Landscape")
+//
+//            cell.synopsisLabel.frame.width = 529
+//        } else {
+//            print("Portrait")
+//            cell.synopsisLabel.frame.width = 245
+//        }
+//    }
+    
     // make a network request to get updated data
     // updates the tableView with the new data
     // hides the RefreshControl
